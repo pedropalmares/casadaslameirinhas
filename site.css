@@ -615,6 +615,10 @@ td {
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
 .sticky {
   position: -webkit-sticky;
   position: sticky;
@@ -655,6 +659,10 @@ td {
 
 .mr-2 {
   margin-right: 0.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .block {
@@ -748,6 +756,11 @@ td {
   background-color: rgb(212 212 212 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#a60000\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(166 0 0 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -764,6 +777,18 @@ td {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
 }
 
 .text-center {
