@@ -39,6 +39,32 @@
         @apply bg-gray-200
     }
 
+    .free-occupied {
+        background: linear-gradient(135deg,white 50%,transparent 0,rgb(185 28 28) 50%);
+    }
+
+    .occupied-dayoff {
+        background: linear-gradient(135deg,rgb(185 28 28) 50%,transparent 0,rgb(229 231 235) 50%);
+    }
+
+    .dayoff-occupied {
+        background: linear-gradient(135deg,rgb(229 231 235) 50%,transparent 0,rgb(185 28 28) 50%);
+    }
+
+    .text-grey-white {
+        background: #fff;
+        background: linear-gradient(to top left, #fff 50%, rgb(115 115 115) 50%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .text-white-grey {
+        background: rgb(115 115 115);
+        background: linear-gradient(to top left, rgb(115 115 115) 50%, #fff 50%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
     td {
         @apply p-2 border-collapse border
     }
