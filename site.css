@@ -512,6 +512,19 @@ h2 {
   padding: 0.5rem;
 }
 
+.month > tbody > tr > td {
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: 0px;
+}
+
+.month > tbody > tr > td > div {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
 .occupied {
   --tw-bg-opacity: 1;
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
@@ -524,30 +537,19 @@ h2 {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
-.free-occupied {
-  background: linear-gradient(135deg,white 50%,transparent 0,rgb(185 28 28) 50%);
-}
-
 .occupied-dayoff {
-  background: linear-gradient(135deg,rgb(185 28 28) 50%,transparent 0,rgb(229 231 235) 50%);
+  color: white;
+  background: linear-gradient(135deg,rgb(185 28 28) 50%,transparent 0,rgb(229 231 235) 50%)
 }
 
 .dayoff-occupied {
   background: linear-gradient(135deg,rgb(229 231 235) 50%,transparent 0,rgb(185 28 28) 50%);
+  color: white
 }
 
-.text-grey-white {
-  background: #fff;
-  background: linear-gradient(to top left, #fff 50%, rgb(115 115 115) 50%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.text-white-grey {
-  background: rgb(115 115 115);
-  background: linear-gradient(to top left, rgb(115 115 115) 50%, #fff 50%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.free-occupied {
+  background: linear-gradient(135deg,white 50%,transparent 0,rgb(185 28 28) 50%);
+  color: white
 }
 
 td {
