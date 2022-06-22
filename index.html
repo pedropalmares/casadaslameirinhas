@@ -416,8 +416,20 @@
     <section id="calendario">
         <h2>CALENDÁRIO</h2>
 
-        <div class="texto">
+        <div class="flex gap-x-3 justify-center mb-4">
+            <div class="flex items-center">
+                <span class="border h-8 w-8"></span>
+                <span class="dayoff h-8 w-8 mr-2"></span>
+                <span>Disponível</span>
+            </div>
 
+            <div class="flex items-center">
+                <span class="occupied h-8 w-8 mr-2"></span>
+                <span>Ocupado</span>
+            </div>
+        </div>
+
+        <div class="texto">
             <div class="month-container lg:w-9/12 mx-auto">
                 <!-- <table class="month">
                     <thead>
