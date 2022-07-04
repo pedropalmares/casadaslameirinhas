@@ -51,9 +51,6 @@
         background: linear-gradient(135deg,rgb(185 28 28) 50%,transparent 0,rgb(229 231 235) 50%);
         color: white
     }
-    .occupied-dayoff {
-        background: linear-gradient(135deg,rgb(185 28 28) 50%,transparent 0,rgb(229 231 235) 50%);
-    }
 
     .dayoff-occupied {
         background: linear-gradient(135deg,rgb(229 231 235) 50%,transparent 0,rgb(185 28 28) 50%);
@@ -62,6 +59,11 @@
 
     .free-occupied {
         background: linear-gradient(135deg,white 50%,transparent 0,rgb(185 28 28) 50%);
+        color: white
+    }
+
+    .occupied-free {
+        background: linear-gradient(135deg,rgb(185 28 28) 50%,transparent 0,white 50%);
         color: white
     }
 

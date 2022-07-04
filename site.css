@@ -538,8 +538,8 @@ h2 {
 }
 
 .occupied-dayoff {
-  color: white;
-  background: linear-gradient(135deg,rgb(185 28 28) 50%,transparent 0,rgb(229 231 235) 50%)
+  background: linear-gradient(135deg,rgb(185 28 28) 50%,transparent 0,rgb(229 231 235) 50%);
+  color: white
 }
 
 .dayoff-occupied {
@@ -549,6 +549,11 @@ h2 {
 
 .free-occupied {
   background: linear-gradient(135deg,white 50%,transparent 0,rgb(185 28 28) 50%);
+  color: white
+}
+
+.occupied-free {
+  background: linear-gradient(135deg,rgb(185 28 28) 50%,transparent 0,white 50%);
   color: white
 }
 
@@ -668,14 +673,6 @@ td {
   margin: 2rem;
 }
 
-.m-2 {
-  margin: 0.5rem;
-}
-
-.m-4 {
-  margin: 1rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -693,20 +690,16 @@ td {
   margin-top: 1rem;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
 }
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mr-2 {
-  margin-right: 0.5rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
 }
 
 .block {
@@ -741,40 +734,24 @@ td {
   height: 20rem;
 }
 
-.h-2 {
-  height: 0.5rem;
+.h-8 {
+  height: 2rem;
 }
 
 .h-6 {
   height: 1.5rem;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-8 {
-  height: 2rem;
-}
-
 .w-full {
   width: 100%;
-}
-
-.w-2 {
-  width: 0.5rem;
-}
-
-.w-6 {
-  width: 1.5rem;
 }
 
 .w-8 {
   width: 2rem;
 }
 
-.w-10 {
-  width: 2.5rem;
+.w-6 {
+  width: 1.5rem;
 }
 
 .table-auto {
@@ -803,11 +780,6 @@ td {
 
 .justify-around {
   justify-content: space-around;
-}
-
-.gap-x-2 {
-  -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
 }
 
 .gap-x-3 {
