@@ -552,11 +552,6 @@ h2 {
   color: white
 }
 
-.occupied-free {
-  background: linear-gradient(135deg,rgb(185 28 28) 50%,transparent 0,white 50%);
-  color: white
-}
-
 td {
   border-collapse: collapse;
   border-width: 1px;
