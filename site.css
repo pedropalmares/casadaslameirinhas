@@ -457,7 +457,7 @@ h2 {
 
 .image-container {
   display: flex;
-  width: 100%;
+  width: 50%;
   flex-wrap: wrap;
 }
 
@@ -539,11 +539,6 @@ h2 {
 
 .occupied-dayoff {
   background: linear-gradient(135deg,rgb(185 28 28) 50%,transparent 0,rgb(229 231 235) 50%);
-  color: white
-}
-
-.dayoff-occupied {
-  background: linear-gradient(135deg,rgb(229 231 235) 50%,transparent 0,rgb(185 28 28) 50%);
   color: white
 }
 
