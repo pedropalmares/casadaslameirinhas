@@ -424,7 +424,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 h2 {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   margin-bottom: 1rem;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -673,10 +673,6 @@ td {
   margin-right: auto;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -687,6 +683,10 @@ td {
 
 .mr-2 {
   margin-right: 0.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .mb-5 {
@@ -737,6 +737,10 @@ td {
   height: 1.5rem;
 }
 
+.min-h-\[40px\] {
+  min-height: 40px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -782,12 +786,12 @@ td {
        column-gap: 0.75rem;
 }
 
-.rounded-full {
-  border-radius: 9999px;
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .border {
@@ -804,14 +808,14 @@ td {
   background-color: rgb(36 35 35 / var(--tw-bg-opacity));
 }
 
-.bg-green-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 101 52 / var(--tw-bg-opacity));
-}
-
 .bg-lightgrey {
   --tw-bg-opacity: 1;
   background-color: rgb(212 212 212 / var(--tw-bg-opacity));
+}
+
+.bg-green-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 101 52 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#a60000\] {
@@ -835,6 +839,11 @@ td {
 
 .p-8 {
   padding: 2rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .px-6 {
@@ -906,12 +915,12 @@ td {
     margin: 3.5rem;
   }
 
-  .lg\:mb-14 {
-    margin-bottom: 3.5rem;
-  }
-
   .lg\:block {
     display: block;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 
   .lg\:h-\[600px\] {
