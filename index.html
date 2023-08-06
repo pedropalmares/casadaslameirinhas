@@ -62,42 +62,20 @@
 </head>
 
 <body class="flex flex-col items-center text-center text-black">
-    <nav class="hidden lg:block bg-black text-white text-sm font-normal w-full sticky top-0 z-20">
-        <ul class="flex justify-around lg:min-h-[80px] lg:px-10 items-center">
-            <li>
-                <a href="#">INÍCIO</a>
-            </li>
-            <li>
-                <a href="#sobre">SOBRE</a>
-            </li>
-            <li>
-                <a href="#quartos">QUARTOS</a>
-            </li>
-            <li>
-                <a href="#comodidades">COMODIDADES</a>
-            </li>
-            <li>
-                <a href="#galeria">GALERIA</a>
-            </li>
-            <li>
-                <a href="#reservas">RESERVAS</a>
-            </li>
-        </ul>
-    </nav>
+    <h1 class="text-2xl lg:text-4xl m-8 lg:m-8 text-green-700">CASA DAS LAMEIRINHAS</h1>
 
-    <nav class="block lg:hidden bg-black text-white text-sm font-normal w-full sticky top-0 z-20">
-        <div>
-            <a class="flex justify-around min-h-[40px] px-10 items-center" href="#reservas">RESERVAS</a>
-        </div>
-    </nav>
+    <img src="images/fora11.png" id="imagem_inicio" class="mx-auto" />
 
-    <h1 class="text-2xl lg:text-4xl m-8 lg:m-14">CASA DAS LAMEIRINHAS</h1>
+    <div class="grid w-full grid-cols-2 lg:grid-cols-6 gap-y-8 py-4 my-8 bg-green-700 text-white text-sm font-normal">
+        <button class="section_button" id="sobre_button">SOBRE</button>
+        <button class="section_button" id="quartos_button">QUARTOS</button>
+        <button class="section_button" id="comodidades_button">COMODIDADES</button>
+        <button class="section_button" id="galeria_button">GALERIA</button>
+        <button class="section_button" id="localizacao_button">LOCALIZAÇÃO</button>
+        <button class="section_button" id="reservas_button">RESERVAS</button>
+    </div>
 
-    <img src="images/fora1.png" class="mx-auto" />
-
-    <section id="sobre">
-        <h2>SOBRE</h2>
-
+    <section id="sobre" class="hidden">
         <div class="texto">
             A Casa das Lameirinhas está situada na aldeia de Boassas, Cinfães, a sensivelmente 1 hora do
             Porto.<br />
@@ -109,9 +87,7 @@
         </div>
     </section>
 
-    <section id="quartos">
-        <h2>QUARTOS</h2>
-
+    <section id="quartos" class="hidden">
         <div class="texto">
             Quarto 1 - suite com uma cama de casal<br />
             Quarto 2 - quarto simples com uma cama de casal<br />
@@ -119,9 +95,7 @@
         </div>
     </section>
 
-    <section id="comodidades">
-        <h2>COMODIDADES</h2>
-
+    <section id="comodidades" class="hidden">
         <div class="texto grid lg:grid-cols-3">
             <span>Wi-Fi gratuito</span>
             <span>Televisão com 200 canais</span>
@@ -144,9 +118,7 @@
         </div>
     </section>
 
-    <section id="galeria">
-        <h2>GALERIA</h2>
-
+    <section id="galeria" class="hidden">
         <h3>SALA</h3>
         <div class="flex flex-wrap container mx-auto lg:w-9/12 mb-4">
             <div class="image-container">
@@ -452,9 +424,7 @@
         </div>
     </section>
 
-    <section id="localizacao">
-        <h2>LOCALIZAÇÃO</h2>
-
+    <section id="localizacao" class="hidden">
         <div class="h-80 lg:h-[600px] mt-4 z-10">
             <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
                 src="https://maps.google.com/maps?width=100%25&amp;height=320&amp;hl=en&amp;q=Casa%20das%20Lameirinhas+(Casa%20das%20Lameirinhas)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
@@ -472,9 +442,7 @@
         </div>
     </section>
 
-    <section id="reservas">
-        <h2>RESERVAS</h2>
-
+    <section id="reservas" class="hidden">
         <div class="flex gap-x-3 justify-center mb-4">
             <div class="flex items-center">
                 <span class="border h-8 w-8"></span>
@@ -1056,12 +1024,12 @@
                     <tr>
                         <td>Agosto</td>
                         <td>€ 240 / noite</td>
-                        <td>Alugado à semana (entrada ao sábado)</td>
+                        <td>Mínimo 5 dias</td>
                     </tr>
                     <tr>
                         <td>Setembro</td>
                         <td>€ 190 / noite na 1ª quinzena<br>€ 175 / noite na 2ª quinzena</td>
-                        <td>Alugado à semana (entrada ao sábado) na 1ª quinzena<br>Mínimo 3 noites na 2ª quinzena</td>
+                        <td>Mínimo 5 dias na 1ª quinzena<br>Mínimo 3 noites na 2ª quinzena</td>
                     </tr>
                     <tr>
                         <td>Outubro</td>
@@ -1112,7 +1080,6 @@
         </div>
     </section>
 
-
     <footer>
         <div class="texto p-8">
             <div class="flex justify-center mt-2">
@@ -1150,6 +1117,10 @@
     </script>
 
     <script defer id="site" type="text/javascript" src="/site.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
