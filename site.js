@@ -14,4 +14,5 @@ document.addEventListener("DOMContentLoaded", function () {
 $(".section_button").click(function () {
   $("section").hide();
   $("#" + this.id.replace("_button", "")).show();
+  window.scrollTo(0, 0);
 });

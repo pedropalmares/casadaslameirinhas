@@ -62,18 +62,24 @@
 </head>
 
 <body class="flex flex-col items-center text-center text-black">
-    <h1 class="text-2xl lg:text-4xl m-8 lg:m-8 text-green-700">CASA DAS LAMEIRINHAS</h1>
+    <nav class="w-full sticky top-0 bg-white">
+        <div class="grid grid-cols-2 lg:grid-cols-6 gap-y-8 py-4 bg-green-700 text-white text-sm font-normal">
+            <button class="section_button" id="sobre_button">SOBRE</button>
+            <button class="section_button" id="quartos_button">QUARTOS</button>
+            <button class="section_button" id="comodidades_button">COMODIDADES</button>
+            <button class="section_button" id="galeria_button">GALERIA</button>
+            <button class="section_button" id="localizacao_button">LOCALIZAÇÃO</button>
+            <button class="section_button" id="reservas_button">RESERVAS</button>
+        </div>
+    </nav>
 
-    <img src="images/fora11.png" id="imagem_inicio" class="mx-auto" />
+    <h1 class="text-2xl lg:text-4xl m-8 lg:m-8 text-green-700">
+        <a href="/">CASA DAS LAMEIRINHAS</a>
+    </h1>
 
-    <div class="grid w-full grid-cols-2 lg:grid-cols-6 gap-y-8 py-4 my-8 bg-green-700 text-white text-sm font-normal">
-        <button class="section_button" id="sobre_button">SOBRE</button>
-        <button class="section_button" id="quartos_button">QUARTOS</button>
-        <button class="section_button" id="comodidades_button">COMODIDADES</button>
-        <button class="section_button" id="galeria_button">GALERIA</button>
-        <button class="section_button" id="localizacao_button">LOCALIZAÇÃO</button>
-        <button class="section_button" id="reservas_button">RESERVAS</button>
-    </div>
+    <section>
+        <img src="images/fora11.png" id="imagem_inicio" class="mx-auto" />
+    </section>
 
     <section id="sobre" class="hidden">
         <div class="texto">
@@ -443,6 +449,11 @@
     </section>
 
     <section id="reservas" class="hidden">
+        <div>
+            <a class="mb-5 border rounded-full px-6 py-1.5 md:py-3 bg-green-800 text-white inline-block font-normal"
+                href="https://forms.gle/f2kZtPYy755ooUpa6" target="_blank">Pedido de reserva</a>
+        </div>
+
         <div class="flex gap-x-3 justify-center mb-4">
             <div class="flex items-center">
                 <span class="border h-8 w-8"></span>
