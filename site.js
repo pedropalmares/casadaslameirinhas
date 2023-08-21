@@ -16,3 +16,19 @@ $(".section_button").click(function () {
   $("#" + this.id.replace("_button", "")).show();
   window.scrollTo(0, 0);
 });
+
+function openTab() {
+  window.open("https://forms.gle/f2kZtPYy755ooUpa6", "_blank");
+}
+
+function addEvent(days) {
+  for (let index = 0; index < days.length; index++) {
+    days[index].addEventListener("click", openTab, false);
+  }
+}
+
+$(document).ready(function () {
+  addEvent(document.getElementsByClassName("occupied-dayoff"));
+  addEvent(document.getElementsByClassName("dayoff"));
+  addEvent(document.getElementsByClassName("free"));
+});
