@@ -542,6 +542,11 @@ h2 {
   color: white
 }
 
+.dayoff-occupied {
+  background: linear-gradient(135deg,rgb(229 231 235) 50%,transparent 0,rgb(185 28 28) 50%);
+  color: white
+}
+
 .free-occupied {
   background: linear-gradient(135deg,white 50%,transparent 0,rgb(185 28 28) 50%);
   color: white
