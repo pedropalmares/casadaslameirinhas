@@ -62,7 +62,7 @@
 </head>
 
 <body class="flex flex-col items-center text-center text-black">
-    <nav class="w-full sticky top-0 bg-white">
+    <nav id="navbar" class="hidden w-full sticky top-0 bg-white">
         <div class="grid grid-cols-2 lg:grid-cols-6 gap-y-8 py-4 bg-green-700 text-white text-sm font-normal">
             <button class="section_button" id="sobre_button">SOBRE</button>
             <button class="section_button" id="quartos_button">QUARTOS</button>
@@ -77,8 +77,17 @@
         <a href="/">CASA DAS LAMEIRINHAS</a>
     </h1>
 
-    <section>
+    <section class="w-full">
         <img src="images/fora11.png" id="imagem_inicio" class="mx-auto" />
+
+        <div class="grid grid-cols-2 lg:grid-cols-6 gap-y-8 py-4 mt-4 bg-green-700 text-white text-sm font-normal">
+            <button class="section_button" id="sobre_button">SOBRE</button>
+            <button class="section_button" id="quartos_button">QUARTOS</button>
+            <button class="section_button" id="comodidades_button">COMODIDADES</button>
+            <button class="section_button" id="galeria_button">GALERIA</button>
+            <button class="section_button" id="localizacao_button">LOCALIZAÇÃO</button>
+            <button class="section_button" id="reservas_button">RESERVAS</button>
+        </div>
     </section>
 
     <section id="sobre" class="hidden">
@@ -449,11 +458,6 @@
     </section>
 
     <section id="reservas" class="hidden">
-        <div>
-            <a class="mb-5 border rounded-full px-6 py-1.5 md:py-3 bg-green-800 text-white inline-block font-normal"
-                href="https://forms.gle/f2kZtPYy755ooUpa6" target="_blank">Pedido de reserva</a>
-        </div>
-
         <div class="flex gap-x-3 justify-center mb-4">
             <div class="flex items-center">
                 <span class="border h-8 w-8"></span>
@@ -740,7 +744,7 @@
                     </tbody>
                 </table> -->
 
-                <table class="month">
+                <!-- <table class="month">
                     <thead>
                         <th colspan="7" class="month-header">Agosto</th>
                     </thead>
@@ -803,7 +807,7 @@
                         </tr>
                     </tbody>
                 </table>
-
+ -->
                 <table class="month">
                     <thead>
                         <th colspan="7" class="month-header">Setembro</th>
@@ -949,7 +953,7 @@
                     </tbody>
                 </table>
 
-                <!-- <table class="month">
+                <table class="month">
                     <thead>
                         <th colspan="7" class="month-header">Novembro</th>
                     </thead>
@@ -965,51 +969,51 @@
                         </tr>
                         <tr>
                             <td></td>
-                            <td class="dayoff">1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td class="dayoff">5</td>
-                            <td class="dayoff">6</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>8</td>
-                            <td>9</td>
-                            <td>10</td>
-                            <td>11</td>
-                            <td class="dayoff">12</td>
-                            <td class="dayoff">13</td>
-                        </tr>
-                        <tr>
-                            <td>14</td>
-                            <td>15</td>
-                            <td>16</td>
-                            <td>17</td>
-                            <td>18</td>
-                            <td class="dayoff">19</td>
-                            <td class="dayoff">20</td>
-                        </tr>
-                        <tr>
-                            <td>21</td>
-                            <td>22</td>
-                            <td>23</td>
-                            <td>24</td>
-                            <td>25</td>
-                            <td class="dayoff">26</td>
-                            <td class="dayoff">27</td>
-                        </tr>
-                        <tr>
-                            <td>28</td>
-                            <td>29</td>
-                            <td>30</td>
                             <td></td>
+                            <td class="dayoff">1</td>
+                            <td class="free">2</td>
+                            <td class="free">3</td>
+                            <td class="dayoff">4</td>
+                            <td class="dayoff">5</td>
+                        </tr>
+                        <tr>
+                            <td class="free">6</td>
+                            <td class="free">7</td>
+                            <td class="free">8</td>
+                            <td class="free">9</td>
+                            <td class="free">10</td>
+                            <td class="dayoff">11</td>
+                            <td class="dayoff">12</td>
+                        </tr>
+                        <tr>
+                            <td class="free">13</td>
+                            <td class="free">14</td>
+                            <td class="free">15</td>
+                            <td class="free">16</td>
+                            <td class="free">17</td>
+                            <td class="dayoff">18</td>
+                            <td class="dayoff">19</td>
+                        </tr>
+                        <tr id="precos">
+                            <td class="free">20</td>
+                            <td class="free">21</td>
+                            <td class="free">22</td>
+                            <td class="free">23</td>
+                            <td class="free">24</td>
+                            <td class="dayoff">25</td>
+                            <td class="dayoff">26</td>
+                        </tr>
+                        <tr>
+                            <td class="free">27</td>
+                            <td class="free">28</td>
+                            <td class="free">29</td>
+                            <td class="free">30</td>
                             <td></td>
                             <td class="dayoff"></td>
                             <td class="dayoff"></td>
                         </tr>
                     </tbody>
-                </table> -->
+                </table>
             </div>
 
             <table class="table-auto not-italic mx-auto text-base m-8">
@@ -1020,12 +1024,12 @@
                 </thead>
 
                 <tbody>
-                    <!-- <tr>
+                    <tr>
                         <td>Abril</td>
                         <td>€ 150 / noite</td>
                         <td>Mínimo 3 ou 4 noites</td>
-                    </tr> -->
-                    <!-- <tr>
+                    </tr>
+                    <tr>
                         <td>Maio</td>
                         <td>€ 150 / noite</td>
                         <td>Mínimo 3 noites</td>
@@ -1039,11 +1043,11 @@
                         <td>Julho</td>
                         <td>€ 200 / noite</td>
                         <td>Alugado à semana (entrada ao sábado)</td>
-                    </tr> -->
+                    </tr>
                     <tr>
                         <td>Agosto</td>
-                        <td>€ 220 / noite</td>
-                        <td>Mínimo 5 dias</td>
+                        <td>€ 240 / noite</td>
+                        <td>Alugado à semana (entrada ao sábado)</td>
                     </tr>
                     <tr>
                         <td>Setembro</td>
@@ -1062,9 +1066,15 @@
         <div class="texto">
             <div class="texto mb-8">
                 <div>
-                    <a class="mb-5 border rounded-full px-6 py-1.5 md:py-3 bg-green-800 text-white inline-block font-normal"
-                        href="https://forms.gle/f2kZtPYy755ooUpa6" target="_blank">Pedido de reserva</a>
+                    <button id="pedido-reserva-button"
+                        class="mb-5 border rounded-full px-6 py-1.5 md:py-3 bg-green-800 text-white inline-block font-normal">Pedido
+                        de reserva</button>
+
+                    <iframe id="pedido-reserva-iframe" class="hidden"
+                        src="https://docs.google.com/forms/d/e/1FAIpQLScP79BliwDNQ_jxpHZQz2tnH25CLgQlxUk0pkwMndeOrgi9Lw/viewform?embedded=true"
+                        width="100%" height="1057" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                 </div>
+
                 <div>
                     <a href="mailto:casadaslameirinhasdouro@gmail.com" target="_blank" rel="noopener noreferrer"
                         class="underline">casadaslameirinhasdouro@gmail.com</a>

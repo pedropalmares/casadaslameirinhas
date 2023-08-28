@@ -1,3 +1,4 @@
+// Image lazy loading
 document.addEventListener("DOMContentLoaded", function () {
   var lazyloadImages = document.querySelectorAll("img.lazy");
 
@@ -11,19 +12,18 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("load", lazyload);
 });
 
+// Navbar
 $(".section_button").click(function () {
+  $("#navbar").show();
   $("section").hide();
   $("#" + this.id.replace("_button", "")).show();
   window.scrollTo(0, 0);
 });
 
-function openTab() {
-  window.open("https://forms.gle/f2kZtPYy755ooUpa6", "_blank");
-}
-
+// Open tab when clicking in calendar
 function addEvent(days) {
   for (let index = 0; index < days.length; index++) {
-    days[index].addEventListener("click", openTab, false);
+    days[index].addEventListener("click", showForm, false);
   }
 }
 
@@ -32,3 +32,18 @@ $(document).ready(function () {
   addEvent(document.getElementsByClassName("dayoff"));
   addEvent(document.getElementsByClassName("free"));
 });
+
+// Pedido de reserva
+function showForm() {
+  $("#pedido-reserva-button").hide();
+  $("#pedido-reserva-iframe").show();
+
+  $("html, body").animate(
+    {
+      scrollTop: $("#precos").offset().top,
+    },
+    0
+  );
+}
+
+$("#pedido-reserva-button").click(showForm);
