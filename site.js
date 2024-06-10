@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Navbar
 $(".section_button").click(function () {
-  $("#navbar").show();
   $("section").hide();
   $("#" + this.id.replace("_button", "")).show();
   window.scrollTo(0, 0);

@@ -1,1248 +1,741 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SSZHTFQZ7G"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-SSZHTFQZ7G"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-SSZHTFQZ7G');
+      gtag("config", "G-SSZHTFQZ7G");
     </script>
 
     <script>
-        !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.async = !0, p.src = s.api_host + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
-        posthog.init('phc_clVuhaHX0KMtpQMpRd991S010RMzKDrqPbPdnVKng01', { api_host: 'https://eu.posthog.com' })
+      !(function (t, e) {
+        var o, n, p, r;
+        e.__SV ||
+          ((window.posthog = e),
+          (e._i = []),
+          (e.init = function (i, s, a) {
+            function g(t, e) {
+              var o = e.split(".");
+              2 == o.length && ((t = t[o[0]]), (e = o[1])),
+                (t[e] = function () {
+                  t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+                });
+            }
+            ((p = t.createElement("script")).type = "text/javascript"),
+              (p.async = !0),
+              (p.src = s.api_host + "/static/array.js"),
+              (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(
+                p,
+                r
+              );
+            var u = e;
+            for (
+              void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
+                u.people = u.people || [],
+                u.toString = function (t) {
+                  var e = "posthog";
+                  return (
+                    "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e
+                  );
+                },
+                u.people.toString = function () {
+                  return u.toString(1) + ".people (stub)";
+                },
+                o =
+                  "capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys".split(
+                    " "
+                  ),
+                n = 0;
+              n < o.length;
+              n++
+            )
+              g(u, o[n]);
+            e._i.push([i, s, a]);
+          }),
+          (e.__SV = 1));
+      })(document, window.posthog || []);
+      posthog.init("phc_clVuhaHX0KMtpQMpRd991S010RMzKDrqPbPdnVKng01", {
+        api_host: "https://eu.posthog.com",
+      });
     </script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="Casa das Lameirinhas">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Casa das Lameirinhas" />
     <title>Casa das Lameirinhas</title>
-    <meta name="description" content="Casa de férias no Douro">
+    <meta name="description" content="Casa de férias no Douro" />
 
-    <link href="/site.css?ver=1" rel="stylesheet">
+    <link href="/site.css?ver=1" rel="stylesheet" />
 
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png">
-    <link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
-    <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-    <link rel="apple-touch-icon" href="/favicon-57.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
-    <meta name="msapplication-TileColor" content="#FFFFFF">
-    <meta name="msapplication-TileImage" content="/favicon-144.png">
-    <meta name="msapplication-config" content="/browserconfig.xml">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png" />
+    <link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="apple-touch-icon" href="/favicon-57.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="/favicon-144.png" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
     <meta property="og:title" content="Casa das Lameirinhas" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="/images/fora1.png" />
     <meta property="og:url" content="https://www.casadaslameirinhas.com/" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Start cookieyes banner -->
-    <script id="cookieyes" type="text/javascript"
-        src="https://cdn-cookieyes.com/client_data/9405056fc2439a710443aec0/script.js"></script>
+    <script
+      id="cookieyes"
+      type="text/javascript"
+      src="https://cdn-cookieyes.com/client_data/9405056fc2439a710443aec0/script.js"
+    ></script>
     <!-- End cookieyes banner -->
-</head>
+  </head>
 
-<body class="flex flex-col items-center text-center text-black">
-    <nav id="navbar" class="hidden w-full sticky top-0 bg-white">
-        <div class="grid grid-cols-2 lg:grid-cols-6 gap-y-8 py-4 bg-green-700 text-white text-sm font-normal">
-            <button class="section_button" id="sobre_button">SOBRE</button>
-            <button class="section_button" id="quartos_button">QUARTOS</button>
-            <button class="section_button" id="comodidades_button">COMODIDADES</button>
-            <button class="section_button" id="galeria_button">GALERIA</button>
-            <button class="section_button" id="localizacao_button">LOCALIZAÇÃO</button>
-            <button class="section_button" id="reservas_button">RESERVAS</button>
-        </div>
+  <body class="flex flex-col items-center text-center text-black">
+    <nav id="navbar" class="w-full sticky top-0 bg-white">
+      <div
+        class="grid grid-cols-2 lg:grid-cols-6 gap-y-8 py-4 bg-green-700 text-white text-sm font-normal"
+      >
+        <button class="section_button" id="sobre_button">SOBRE</button>
+        <button class="section_button" id="quartos_button">QUARTOS</button>
+        <button class="section_button" id="comodidades_button">
+          COMODIDADES
+        </button>
+        <button class="section_button" id="galeria_button">GALERIA</button>
+        <button class="section_button" id="localizacao_button">
+          LOCALIZAÇÃO
+        </button>
+        <button class="section_button" id="reservas_button">RESERVAS</button>
+      </div>
     </nav>
 
     <h1 class="text-2xl lg:text-4xl m-8 lg:m-8 text-green-700">
-        <a href="/">CASA DAS LAMEIRINHAS</a>
+      <a href="/">CASA DAS LAMEIRINHAS</a>
     </h1>
 
-    <section class="w-full">
-        <img src="images/fora11.png" id="imagem_inicio" class="mx-auto" />
+    <div>
+      <button
+        id="venda-button"
+        class="mb-5 border rounded-full px-6 py-1.5 md:py-3 bg-green-800 text-white inline-block font-normal"
+      >
+        <a
+          href="https://www.remax.pt/imoveis/venda-moradia-t3-cinfaes-oliveira/122211050-637"
+          target="_blank"
+        >
+          Venda
+        </a>
+      </button>
 
-        <div class="grid grid-cols-2 lg:grid-cols-6 gap-y-8 py-4 mt-4 bg-green-700 text-white text-sm font-normal">
-            <button class="section_button" id="sobre_button">SOBRE</button>
-            <button class="section_button" id="quartos_button">QUARTOS</button>
-            <button class="section_button" id="comodidades_button">COMODIDADES</button>
-            <button class="section_button" id="galeria_button">GALERIA</button>
-            <button class="section_button" id="localizacao_button">LOCALIZAÇÃO</button>
-            <button class="section_button" id="reservas_button">RESERVAS</button>
-        </div>
+      <button
+        id="aluguer-button"
+        class="mb-5 border rounded-full px-6 py-1.5 md:py-3 bg-green-800 text-white inline-block font-normal"
+      >
+        <a
+          href="https://www.lovelystay.com/pt/apartment/casa-das-lameirinhas"
+          target="_blank"
+        >
+          Aluguer férias
+        </a>
+      </button>
+    </div>
+
+    <section class="w-full">
+      <img src="images/fora4.png" class="mx-auto" />
     </section>
 
     <section id="sobre" class="hidden">
-        <div class="texto">
-            A Casa das Lameirinhas está situada na aldeia de Boassas, Cinfães, a sensivelmente 1 hora do
-            Porto.<br />
-            A casa está imersa na natureza, ao lado do Rio Bestança e do Rio Douro.<br />
-            Trata-se de um T3, com dois quartos-de-banho completos.<br />
-            A Casa das Lameirinhas tem lotação máxima de 8 pessoas.<br />
-            Dispõe de piscina exterior privativa.<br /><br />
-            Registo nº 113883/AL
-        </div>
+      <div class="texto">
+        A Casa das Lameirinhas está situada na aldeia de Boassas, Cinfães, a
+        sensivelmente 1 hora do Porto.<br />
+        A casa está imersa na natureza, ao lado do Rio Bestança e do Rio
+        Douro.<br />
+        Trata-se de um T3, com dois quartos-de-banho completos.<br />
+        A Casa das Lameirinhas tem lotação máxima de 8 pessoas.<br />
+        Dispõe de piscina exterior privativa.<br /><br />
+        Registo nº 113883/AL
+      </div>
     </section>
 
     <section id="quartos" class="hidden">
-        <div class="texto">
-            Quarto 1 - suite com uma cama de casal<br />
-            Quarto 2 - quarto simples com uma cama de casal<br />
-            Quarto 3 - quarto simples com um beliche de solteiro e uma cama de casal
-        </div>
+      <div class="texto">
+        Quarto 1 - suite com uma cama de casal<br />
+        Quarto 2 - quarto simples com uma cama de casal<br />
+        Quarto 3 - quarto simples com um beliche de solteiro e uma cama de casal
+      </div>
     </section>
 
     <section id="comodidades" class="hidden">
-        <div class="texto grid lg:grid-cols-3">
-            <span>Wi-Fi gratuito</span>
-            <span>Televisão com 200 canais</span>
-            <span>Estacionamento gratuito</span>
-            <span>Toalhas de piscina</span>
-            <span>Máquina de lavar a louça</span>
-            <span>Máquina de café Nespresso</span>
-            <span>Microondas</span>
-            <span>Forno</span>
-            <span>Fogão a gás</span>
-            <span>Fervedor elétrico</span>
-            <span>Churrasqueira</span>
-            <span>Forno a lenha</span>
-            <span>Cama de bebé</span>
-            <span>Cadeira de alimentação de bebé</span>
-            <span>Material de desenho para crianças</span>
-            <span>Café e chá disponíveis</span>
-            <span>Jogos infantis</span>
-            <span>Animais permitidos</span>
-        </div>
+      <div class="texto grid lg:grid-cols-3">
+        <span>Wi-Fi gratuito</span>
+        <span>Televisão com 200 canais</span>
+        <span>Estacionamento gratuito</span>
+        <span>Toalhas de piscina</span>
+        <span>Máquina de lavar a louça</span>
+        <span>Máquina de café Nespresso</span>
+        <span>Microondas</span>
+        <span>Forno</span>
+        <span>Fogão a gás</span>
+        <span>Fervedor elétrico</span>
+        <span>Churrasqueira</span>
+        <span>Forno a lenha</span>
+        <span>Cama de bebé</span>
+        <span>Cadeira de alimentação de bebé</span>
+        <span>Material de desenho para crianças</span>
+        <span>Café e chá disponíveis</span>
+        <span>Jogos infantis</span>
+        <span>Animais permitidos</span>
+      </div>
     </section>
 
     <section id="galeria" class="hidden">
-        <h3>SALA</h3>
-        <div class="flex flex-wrap container mx-auto lg:w-9/12 mb-4">
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto sala" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/sala6.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto sala" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/sala2.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto sala" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/sala9.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto sala" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/sala4.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto sala" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/sala5.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto sala" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/sala8.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto sala" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/sala7.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto sala" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/sala10.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto sala" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/sala1.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto sala" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/sala11.jpg">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto sala" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/sala12.jpg">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto sala" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/sala13.jpg">
-                </div>
-            </div>
+      <h3>SALA</h3>
+      <div class="flex flex-wrap container mx-auto lg:w-9/12 mb-4">
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto sala"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/sala6.png"
+            />
+          </div>
         </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto sala"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/sala2.png"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto sala"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/sala9.png"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto sala"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/sala4.png"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto sala"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/sala5.png"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto sala"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/sala8.png"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto sala"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/sala7.png"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto sala"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/sala10.png"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto sala"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/sala1.png"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto sala"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/sala11.jpg"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto sala"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/sala12.jpg"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto sala"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/sala13.jpg"
+            />
+          </div>
+        </div>
+      </div>
 
-        <h3>COZINHA</h3>
-        <div class="flex flex-wrap container mx-auto lg:w-9/12 mb-4">
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto cozinha" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/cozinha3.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto cozinha" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/cozinha6.jpg">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto cozinha" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/cozinha2.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto cozinha" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/cozinha1.png">
-                </div>
-            </div>
+      <h3>COZINHA</h3>
+      <div class="flex flex-wrap container mx-auto lg:w-9/12 mb-4">
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto cozinha"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/cozinha3.png"
+            />
+          </div>
         </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto cozinha"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/cozinha6.jpg"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto cozinha"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/cozinha2.png"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto cozinha"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/cozinha1.png"
+            />
+          </div>
+        </div>
+      </div>
 
-        <h3>QUARTO 1</h3>
-        <div class="flex flex-wrap container mx-auto lg:w-9/12 mb-4">
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto quarto" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/quarto11.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto quarto" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/quarto13.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto quarto" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/quarto14.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto quarto" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/wc16.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto quarto" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/wc11.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto quarto" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/wc12.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto quarto" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/wc13.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto quarto" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/wc14.png">
-                </div>
-            </div>
+      <h3>QUARTO 1</h3>
+      <div class="flex flex-wrap container mx-auto lg:w-9/12 mb-4">
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto quarto"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/quarto11.png"
+            />
+          </div>
         </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto quarto"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/quarto13.png"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto quarto"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/quarto14.png"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto quarto"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/wc16.png"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto quarto"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/wc11.png"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto quarto"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/wc12.png"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto quarto"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/wc13.png"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto quarto"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/wc14.png"
+            />
+          </div>
+        </div>
+      </div>
 
-        <h3>QUARTO 2</h3>
-        <div class="flex flex-wrap container mx-auto lg:w-9/12 mb-4">
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto quarto" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/quarto22.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto quarto" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/quarto23.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto quarto" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/quarto24.png">
-                </div>
-            </div>
+      <h3>QUARTO 2</h3>
+      <div class="flex flex-wrap container mx-auto lg:w-9/12 mb-4">
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto quarto"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/quarto22.png"
+            />
+          </div>
         </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto quarto"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/quarto23.png"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto quarto"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/quarto24.png"
+            />
+          </div>
+        </div>
+      </div>
 
-        <h3>QUARTO 3</h3>
-        <div class="flex flex-wrap container mx-auto lg:w-9/12 mb-4">
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto quarto" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/quarto35.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto quarto" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/quarto31.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto quarto" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/quarto33.png">
-                </div>
-            </div>
+      <h3>QUARTO 3</h3>
+      <div class="flex flex-wrap container mx-auto lg:w-9/12 mb-4">
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto quarto"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/quarto35.png"
+            />
+          </div>
         </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto quarto"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/quarto31.png"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto quarto"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/quarto33.png"
+            />
+          </div>
+        </div>
+      </div>
 
-        <h3>WC</h3>
-        <div class="flex flex-wrap container mx-auto lg:w-9/12 mb-4">
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto wc" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/wc21.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto wc" class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/wc22.png">
-                </div>
-            </div>
+      <h3>WC</h3>
+      <div class="flex flex-wrap container mx-auto lg:w-9/12 mb-4">
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto wc"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/wc21.png"
+            />
+          </div>
         </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto wc"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/wc22.png"
+            />
+          </div>
+        </div>
+      </div>
 
-        <h3>JARDIM E PISCINA</h3>
-        <div class="flex flex-wrap container mx-auto lg:w-9/12 mb-4">
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto jardim piscina"
-                        class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/fora4.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto jardim piscina"
-                        class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/vista5.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto jardim piscina"
-                        class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/fora11.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto jardim piscina"
-                        class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/fora12.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto jardim piscina"
-                        class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/fora18.jpg">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto jardim piscina"
-                        class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/vista1.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto jardim piscina"
-                        class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/vista2.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto jardim piscina"
-                        class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/fora10.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto jardim piscina"
-                        class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/fora3.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto jardim piscina"
-                        class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/fora9.png">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto jardim piscina"
-                        class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/fora15.jpg">
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="image">
-                    <img alt="foto jardim piscina"
-                        class="block object-cover object-center w-full h-full rounded-lg lazy"
-                        data-src="/images/fora17.jpg">
-                </div>
-            </div>
+      <h3>JARDIM E PISCINA</h3>
+      <div class="flex flex-wrap container mx-auto lg:w-9/12 mb-4">
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto jardim piscina"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/fora4.png"
+            />
+          </div>
         </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto jardim piscina"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/vista5.png"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto jardim piscina"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/fora11.png"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto jardim piscina"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/fora12.png"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto jardim piscina"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/fora18.jpg"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto jardim piscina"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/vista1.png"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto jardim piscina"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/vista2.png"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto jardim piscina"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/fora10.png"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto jardim piscina"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/fora3.png"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto jardim piscina"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/fora9.png"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto jardim piscina"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/fora15.jpg"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image">
+            <img
+              alt="foto jardim piscina"
+              class="block object-cover object-center w-full h-full rounded-lg lazy"
+              data-src="/images/fora17.jpg"
+            />
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="localizacao" class="hidden">
-        <div class="h-80 lg:h-[600px] mt-4 z-10">
-            <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                src="https://maps.google.com/maps?width=100%25&amp;height=320&amp;hl=en&amp;q=Casa%20das%20Lameirinhas+(Casa%20das%20Lameirinhas)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-            </iframe>
-        </div>
+      <div class="h-80 lg:h-[600px] mt-4 z-10">
+        <iframe
+          width="100%"
+          height="100%"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="https://maps.google.com/maps?width=100%25&amp;height=320&amp;hl=en&amp;q=Casa%20das%20Lameirinhas+(Casa%20das%20Lameirinhas)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        >
+        </iframe>
+      </div>
 
-        <div class="texto">
-            <h2>ATIVIDADES OU O QUE VISITAR</h2>
+      <div class="texto">
+        <h2>ATIVIDADES OU O QUE VISITAR</h2>
 
-            Atividades de paddle e caiaque no Cais de Porto Antigo (a 4 minutos da Casa das Lameirinhas)<br />
-            Cascatas do Rio Bestança nas Pias<br />
-            Diversos trilhos de caminhada no meio da Natureza<br />
-            Vila de Cinfães (Igreja Matriz e Museu)<br />
-            Rota do Românico<br />
-        </div>
+        Atividades de paddle e caiaque no Cais de Porto Antigo (a 4 minutos da
+        Casa das Lameirinhas)<br />
+        Cascatas do Rio Bestança nas Pias<br />
+        Diversos trilhos de caminhada no meio da Natureza<br />
+        Vila de Cinfães (Igreja Matriz e Museu)<br />
+        Rota do Românico<br />
+      </div>
     </section>
 
     <section id="reservas" class="hidden">
-        <div class="flex gap-x-3 justify-center mb-4">
-            <!-- <div class="flex items-center">
-                <span class="border h-8 w-8"></span>
-                <span class="dayoff h-8 w-8 mr-2"></span>
-                <span>Disponível</span>
-            </div>
-
-            <div class="flex items-center">
-                <span class="occupied h-8 w-8 mr-2"></span>
-                <span>Ocupado</span>
-            </div> -->
+      <div class="texto">
+        <div class="texto mb-8">
+          <div>
+            <a
+              href="mailto:casadaslameirinhasdouro@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="underline"
+              >casadaslameirinhasdouro@gmail.com</a
+            >
+          </div>
+          <div>+351 916 154 319 (Chamada para a rede móvel nacional)</div>
         </div>
-
-        <div class="texto">
-            <div class="month-container lg:w-9/12 mx-auto">
-                <!-- <table class="month">
-                    <thead>
-                        <th colspan="7" class="month-header">Abril</th>
-                    </thead>
-                    <tbody class="border-collapse border">
-                        <tr class="bg-lightgrey border-lightgrey">
-                            <td>S</td>
-                            <td>T</td>
-                            <td>Q</td>
-                            <td>Q</td>
-                            <td>S</td>
-                            <td>S</td>
-                            <td>D</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td class="dayoff">1</td>
-                            <td class="dayoff">2</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>5</td>
-                            <td>
-                                <div class="free-occupied">6</div>
-                            </td>
-                            <td class="occupied">7</td>
-                            <td class="occupied">8</td>
-                            <td>
-                                <div class="occupied-dayoff">9</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td>11</td>
-                            <td>12</td>
-                            <td>13</td>
-                            <td>14</td>
-                            <td class="dayoff">15</td>
-                            <td class="dayoff">16</td>
-                        </tr>
-                        <tr>
-                            <td>17</td>
-                            <td>18</td>
-                            <td>19</td>
-                            <td>20</td>
-                            <td>21</td>
-                            <td class="dayoff">22</td>
-                            <td class="dayoff">23</td>
-                        </tr>
-                        <tr>
-                            <td>24</td>
-                            <td class="dayoff">25</td>
-                            <td>26</td>
-                            <td>27</td>
-                            <td>
-                                <div class="free-occupied">28</div>
-                            </td>
-                            <td class="occupied">29</td>
-                            <td class="occupied">30</td>
-                        </tr>
-                    </tbody>
-                </table> -->
-
-                <!-- <table class="month">
-                    <thead>
-                        <th colspan="7" class="month-header">Maio</th>
-                    </thead>
-                    <tbody class="border-collapse border">
-                        <tr class="bg-lightgrey border-lightgrey">
-                            <td>S</td>
-                            <td>T</td>
-                            <td>Q</td>
-                            <td>Q</td>
-                            <td>S</td>
-                            <td>S</td>
-                            <td>D</td>
-                        </tr>
-                        <tr>
-                            <td class="occupied">1</td>
-                            <td>
-                                <div class="occupied-free">2</div>
-                            </td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>5</td>
-                            <td class="dayoff">6</td>
-                            <td class="dayoff">7</td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>9</td>
-                            <td>10</td>
-                            <td>11</td>
-                            <td>12</td>
-                            <td class="dayoff">13</td>
-                            <td class="dayoff">14</td>
-                        </tr>
-                        <tr>
-                            <td>15</td>
-                            <td>16</td>
-                            <td>17</td>
-                            <td>18</td>
-                            <td>19</td>
-                            <td class="dayoff">20</td>
-                            <td class="dayoff">21</td>
-                        </tr>
-                        <tr>
-                            <td>22</td>
-                            <td>23</td>
-                            <td>24</td>
-                            <td>25</td>
-                            <td>26</td>
-                            <td class="dayoff">27</td>
-                            <td class="dayoff">28</td>
-                        </tr>
-                        <tr>
-                            <td>29</td>
-                            <td>30</td>
-                            <td>31</td>
-                            <td></td>
-                            <td></td>
-                            <td class="dayoff"></td>
-                            <td class="dayoff"></td>
-                        </tr>
-                    </tbody>
-                </table> -->
-
-                <!-- <table class="month">
-                    <thead>
-                        <th colspan="7" class="month-header">Junho</th>
-                    </thead>
-                    <tbody class="border-collapse border">
-                        <tr class="bg-lightgrey border-lightgrey">
-                            <td>S</td>
-                            <td>T</td>
-                            <td>Q</td>
-                            <td>Q</td>
-                            <td>S</td>
-                            <td>S</td>
-                            <td>D</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>1</td>
-                            <td>2</td>
-                            <td class="dayoff">3</td>
-                            <td class="dayoff">4</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>6</td>
-                            <td>
-                                <div class="free-occupied">7</div>
-                            </td>
-                            <td class="occupied">8</td>
-                            <td class="occupied">9</td>
-                            <td class="occupied">10</td>
-                            <td>
-                                <div class="occupied-dayoff">11</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>12</td>
-                            <td>13</td>
-                            <td>14</td>
-                            <td>15</td>
-                            <td>16</td>
-                            <td class="dayoff">17</td>
-                            <td class="dayoff">18</td>
-                        </tr>
-                        <tr>
-                            <td>19</td>
-                            <td>20</td>
-                            <td>21</td>
-                            <td>22</td>
-                            <td>23</td>
-                            <td class="dayoff">24</td>
-                            <td class="dayoff">25</td>
-                        </tr>
-                        <tr>
-                            <td>26</td>
-                            <td>27</td>
-                            <td>28</td>
-                            <td>29</td>
-                            <td>30</td>
-                            <td class="dayoff"></td>
-                            <td class="dayoff"></td>
-                        </tr>
-                    </tbody>
-                </table> -->
-
-                <!-- <table class="month">
-                    <thead>
-                        <th colspan="7" class="month-header">Julho</th>
-                    </thead>
-                    <tbody class="border-collapse border">
-                        <tr class="bg-lightgrey border-lightgrey">
-                            <td>S</td>
-                            <td>T</td>
-                            <td>Q</td>
-                            <td>Q</td>
-                            <td>S</td>
-                            <td>S</td>
-                            <td>D</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td class="dayoff">1</td>
-                            <td class="dayoff">2</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>5</td>
-                            <td>6</td>
-                            <td>
-                                <div class="free-occupied">7</div>
-                            </td>
-                            <td class="occupied">8</td>
-                            <td class="occupied">9</td>
-                        </tr>
-                        <tr>
-                            <td class="occupied">10</td>
-                            <td class="occupied">11</td>
-                            <td class="occupied">12</td>
-                            <td class="occupied">13</td>
-                            <td class="occupied">14</td>
-                            <td class="occupied">15</td>
-                            <td class="occupied">16</td>
-                        </tr>
-                        <tr>
-                            <td class="occupied">17</td>
-                            <td class="occupied">18</td>
-                            <td class="occupied">19</td>
-                            <td class="occupied">20</td>
-                            <td class="occupied">21</td>
-                            <td class="occupied">22</td>
-                            <td class="occupied">23</td>
-                        </tr>
-                        <tr>
-                            <td class="occupied">24</td>
-                            <td class="occupied">25</td>
-                            <td class="occupied">26</td>
-                            <td class="occupied">27</td>
-                            <td class="occupied">28</td>
-                            <td class="occupied">29</td>
-                            <td class="occupied">30</td>
-                        </tr>
-                        <tr>
-                            <td class="occupied">31</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td class="dayoff"></td>
-                            <td class="dayoff"></td>
-                        </tr>
-                    </tbody>
-                </table> -->
-
-                <!-- <table class="month">
-                    <thead>
-                        <th colspan="7" class="month-header">Agosto</th>
-                    </thead>
-                    <tbody class="border-collapse border">
-                        <tr class="bg-lightgrey border-lightgrey">
-                            <td>S</td>
-                            <td>T</td>
-                            <td>Q</td>
-                            <td>Q</td>
-                            <td>S</td>
-                            <td>S</td>
-                            <td>D</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td class="occupied">1</td>
-                            <td class="occupied">2</td>
-                            <td class="occupied">3</td>
-                            <td class="occupied">4</td>
-                            <td class="occupied">5</td>
-                            <td class="occupied">6</td>
-                        </tr>
-                        <tr>
-                            <td class="occupied">7</td>
-                            <td class="occupied">8</td>
-                            <td class="occupied">9</td>
-                            <td class="occupied">10</td>
-                            <td class="occupied">11</td>
-                            <td class="occupied">12</td>
-                            <td class="occupied">13</td>
-                        </tr>
-                        <tr>
-                            <td class="occupied">14</td>
-                            <td class="occupied">15</td>
-                            <td class="occupied">16</td>
-                            <td class="occupied">17</td>
-                            <td class="occupied">18</td>
-                            <td class="occupied">19</td>
-                            <td class="occupied">20</td>
-                        </tr>
-                        <tr>
-                            <td class="occupied">21</td>
-                            <td class="occupied">22</td>
-                            <td class="occupied">23</td>
-                            <td class="occupied">24</td>
-                            <td class="occupied">25</td>
-                            <td>
-                                <div class="occupied-dayoff">26</div>
-                            </td>
-                            <td class="dayoff">27</td>
-                        </tr>
-                        <tr>
-                            <td class="free">28</td>
-                            <td class="free">29</td>
-                            <td class="free">30</td>
-                            <td class="free">31</td>
-                            <td></td>
-                            <td class="dayoff"></td>
-                            <td class="dayoff"></td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <table class="month">
-                    <thead>
-                        <th colspan="7" class="month-header">Setembro</th>
-                    </thead>
-                    <tbody class="border-collapse border">
-                        <tr class="bg-lightgrey border-lightgrey">
-                            <td>S</td>
-                            <td>T</td>
-                            <td>Q</td>
-                            <td>Q</td>
-                            <td>S</td>
-                            <td>S</td>
-                            <td>D</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td class="free">1</td>
-                            <td class="dayoff">2</td>
-                            <td>
-                                <div class="dayoff-occupied">
-                                    3
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="occupied">4</td>
-                            <td class="occupied">5</td>
-                            <td class="occupied">6</td>
-                            <td class="occupied">7</td>
-                            <td class="occupied">8</td>
-                            <td>
-                                <div class="occupied-dayoff">
-                                    9
-                                </div>
-                            </td>
-                            <td class="dayoff">10</td>
-                        </tr>
-                        <tr>
-                            <td class="free">11</td>
-                            <td class="free">12</td>
-                            <td class="free">13</td>
-                            <td class="free">14</td>
-                            <td class="free">15</td>
-                            <td class="dayoff">16</td>
-                            <td class="dayoff">17</td>
-                        </tr>
-                        <tr>
-                            <td class="free">18</td>
-                            <td class="free">19</td>
-                            <td class="free">20</td>
-                            <td class="free">21</td>
-                            <td>
-                                <div class="free-occupied">
-                                    22
-                                </div>
-                            </td>
-                            <td class="occupied">23</td>
-                            <td class="occupied">24</td>
-                        </tr>
-                        <tr>
-                            <td class="occupied">25</td>
-                            <td class="occupied">26</td>
-                            <td>
-                                <div class="occupied-free">
-                                    27
-                                </div>
-                            </td>
-                            <td class="free">28</td>
-                            <td class="free">29</td>
-                            <td class="dayoff">30</td>
-                            <td class="dayoff"></td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <table class="month">
-                    <thead>
-                        <th colspan="7" class="month-header">Outubro</th>
-                    </thead>
-                    <tbody class="border-collapse border">
-                        <tr class="bg-lightgrey border-lightgrey">
-                            <td>S</td>
-                            <td>T</td>
-                            <td>Q</td>
-                            <td>Q</td>
-                            <td>S</td>
-                            <td>S</td>
-                            <td>D</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td class="dayoff"></td>
-                            <td class="dayoff">1</td>
-                        </tr>
-                        <tr>
-                            <td class="free">2</td>
-                            <td class="free">3</td>
-                            <td class="free">4</td>
-                            <td>
-                                <div class="free-occupied">5</div>
-                            </td>
-                            <td class="occupied">6</td>
-                            <td class="occupied">7</td>
-                            <td class="occupied">8</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="occupied-free">9</div>
-                            </td>
-                            <td class="free">10</td>
-                            <td class="free">11</td>
-                            <td class="free">12</td>
-                            <td>
-                                <div class="free-occupied">13</div>
-                            </td>
-                            <td class="occupied">14</td>
-                            <td>
-                                <div class="occupied-dayoff">15</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="free">16</td>
-                            <td class="free">17</td>
-                            <td class="free">18</td>
-                            <td class="free">19</td>
-                            <td class="free">20</td>
-                            <td class="dayoff">21</td>
-                            <td class="dayoff">22</td>
-                        </tr>
-                        <tr>
-                            <td class="free">23</td>
-                            <td class="free">24</td>
-                            <td class="free">25</td>
-                            <td class="free">26</td>
-                            <td class="free">27</td>
-                            <td class="dayoff">28</td>
-                            <td class="dayoff">29</td>
-                        </tr>
-                        <tr>
-                            <td class="free">30</td>
-                            <td class="free">31</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td class="dayoff"></td>
-                            <td class="dayoff"></td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <table class="month">
-                    <thead>
-                        <th colspan="7" class="month-header">Novembro</th>
-                    </thead>
-                    <tbody class="border-collapse border">
-                        <tr class="bg-lightgrey border-lightgrey">
-                            <td>S</td>
-                            <td>T</td>
-                            <td>Q</td>
-                            <td>Q</td>
-                            <td>S</td>
-                            <td>S</td>
-                            <td>D</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td class="dayoff">1</td>
-                            <td class="free">2</td>
-                            <td class="free">3</td>
-                            <td class="dayoff">4</td>
-                            <td class="dayoff">5</td>
-                        </tr>
-                        <tr>
-                            <td class="free">6</td>
-                            <td class="free">7</td>
-                            <td class="free">8</td>
-                            <td class="free">9</td>
-                            <td class="free">10</td>
-                            <td class="dayoff">11</td>
-                            <td class="dayoff">12</td>
-                        </tr>
-                        <tr>
-                            <td class="free">13</td>
-                            <td class="free">14</td>
-                            <td class="free">15</td>
-                            <td class="free">16</td>
-                            <td class="free">17</td>
-                            <td class="dayoff">18</td>
-                            <td class="dayoff">19</td>
-                        </tr>
-                        <tr>
-                            <td class="free">20</td>
-                            <td class="free">21</td>
-                            <td class="free">22</td>
-                            <td class="free">23</td>
-                            <td class="free">24</td>
-                            <td class="dayoff">25</td>
-                            <td class="dayoff">26</td>
-                        </tr>
-                        <tr>
-                            <td class="free">27</td>
-                            <td class="free">28</td>
-                            <td class="free">29</td>
-                            <td class="free">30</td>
-                            <td></td>
-                            <td class="dayoff"></td>
-                            <td class="dayoff"></td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <table class="month">
-                    <thead>
-                        <th colspan="7" class="month-header">Dezembro</th>
-                    </thead>
-                    <tbody class="border-collapse border">
-                        <tr class="bg-lightgrey border-lightgrey">
-                            <td>S</td>
-                            <td>T</td>
-                            <td>Q</td>
-                            <td>Q</td>
-                            <td>S</td>
-                            <td>S</td>
-                            <td>D</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td class="dayoff">1</td>
-                            <td class="dayoff">2</td>
-                            <td class="dayoff">3</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="free-occupied">4</div>
-                            </td>
-                            <td class="occupied">5</td>
-                            <td class="occupied">6</td>
-                            <td class="occupied">7</td>
-                            <td class="occupied">8</td>
-                            <td class="occupied">9</td>
-                            <td class="occupied">10</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="occupied-free">11</div>
-                            </td>
-                            <td class="free">12</td>
-                            <td class="free">13</td>
-                            <td class="free">14</td>
-                            <td class="free">15</td>
-                            <td class="dayoff">16</td>
-                            <td class="dayoff">17</td>
-                        </tr>
-                        <tr>
-                            <td class="free">18</td>
-                            <td class="free">19</td>
-                            <td class="free">20</td>
-                            <td class="free">21</td>
-                            <td class="free">22</td>
-                            <td>
-                                <div class="dayoff-occupied">23</div>
-                            </td>
-                            <td class="occupied">24</td>
-                        </tr>
-                        <tr>
-                            <td class="occupied">25</td>
-                            <td class="occupied">26</td>
-                            <td class="occupied">27</td>
-                            <td class="occupied">28</td>
-                            <td class="occupied">29</td>
-                            <td class="occupied">30</td>
-                            <td class="occupied">31</td>
-                        </tr>
-                    </tbody>
-                </table>-->
-            </div>
-
-            <!-- <table class="table-auto not-italic mx-auto text-base m-8" id="precos">
-                <thead>
-                    <th class="border-collapse border p-2">Data</th>
-                    <th class="border-collapse border p-2">Valor</th>
-                    <th class="border-collapse border p-2">Observações</th>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>Abril</td>
-                        <td>€ 150 / noite</td>
-                        <td>Mínimo 3 ou 4 noites</td>
-                    </tr>
-                    <tr>
-                        <td>Maio</td>
-                        <td>€ 150 / noite</td>
-                        <td>Mínimo 3 noites</td>
-                    </tr>
-                    <tr>
-                        <td>Junho</td>
-                        <td>€ 175 / noite</td>
-                        <td>Mínimo 3 ou 4 noites</td>
-                    </tr>
-                    <tr>
-                        <td>Julho</td>
-                        <td>€ 200 / noite</td>
-                        <td>Alugado à semana (entrada ao sábado)</td>
-                    </tr>
-                    <tr>
-                        <td>Agosto</td>
-                        <td>€ 240 / noite</td>
-                        <td>Alugado à semana (entrada ao sábado)</td>
-                    </tr>
-                    <tr>
-                        <td>Setembro</td>
-                        <td>€ 180 / noite na 1ª quinzena<br>€ 175 / noite na 2ª quinzena</td>
-                        <td>Mínimo 5 dias na 1ª quinzena<br>Mínimo 3 noites na 2ª quinzena</td>
-                    </tr>
-                    <tr>
-                        <td>Outubro</td>
-                        <td>€ 150 / noite</td>
-                        <td>Mínimo 3 noites</td>
-                    </tr>
-                    <tr>
-                        <td>Novembro</td>
-                        <td>€ 150 / noite</td>
-                        <td>Mínimo 3 noites</td>
-                    </tr>
-                    <tr>
-                        <td>Dezembro</td>
-                        <td>€ 150 / noite</td>
-                        <td>Mínimo 3 noites</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div> -->
-
-        <div class="texto">
-            <div class="texto mb-8">
-                <div>
-                    <button id="pedido-reserva-button"
-                        class="mb-5 border rounded-full px-6 py-1.5 md:py-3 bg-green-800 text-white inline-block font-normal">
-                        <a href="https://www.lovelystay.com/pt/apartment/casa-das-lameirinhas" target="_blank">
-                            Pedido de reserva
-                        </a>
-                        </button>
-
-                    <!-- <iframe id="pedido-reserva-iframe" class="hidden"
-                        src="https://docs.google.com/forms/d/e/1FAIpQLScP79BliwDNQ_jxpHZQz2tnH25CLgQlxUk0pkwMndeOrgi9Lw/viewform?embedded=true"
-                        width="100%" height="1057" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
-                </div>
-
-                <div>
-                    <a href="mailto:casadaslameirinhasdouro@gmail.com" target="_blank" rel="noopener noreferrer"
-                        class="underline">casadaslameirinhasdouro@gmail.com</a>
-                </div>
-                <div>+351 916 154 319 (Chamada para a rede móvel nacional)</div>
-            </div>
-<!-- 
-            <div class="texto mb-4 mx-auto lg:w-9/12">
-                Check-in: 17h - 21h<br />
-                Check-out: até às 11h<br />
-                É necessário combinar, antecipadamente, com Casa das Lameirinhas a hora de entrada, por forma a
-                realizarem o check-in.<br />
-                É exigida uma caução de 200€, no momento de chegada, que será reembolsada na totalidade, após uma
-                inspeção ao alojamento no final da estadia.<br />
-                Esta propriedade não permite a realização de festas de despedida de solteiro(a) e/ou festas
-                semelhantes.<br />
-                Não são permitidas visitas aos hóspedes na Casa das Lameirinhas.<br />
-                É proibido fumar dentro da Casa das Lameirinhas.<br />
-                Quando levarem animais, têm que limpar os seus dejetos. Para isso, há sacos próprios
-                disponibilizados pela Casa das Lameirinhas. Deverão também ter todos os cuidados para que os vossos
-                animais não façam buracos ou roam mobiliário da casa. Tenham, ainda, atenção a que o terreno não
-                está totalmente vedado.
-                <br />A água da torneira foi testada como boa para consumo, de acordo com as entidades locais.
-            </div> -->
-
-            <!-- <div class="texto">
-                PAGAMENTO<br />
-                50% do valor no momento da reserva<br />
-                50% do valor até 1 semana antes do check-in<br />
-                Reembolso total se cancelar até 3 meses antes do check-in
-            </div> -->
-        </div>
+      </div>
     </section>
 
     <footer>
-        <div class="texto p-8">
-            <div class="flex justify-center mt-2">
-                <a href="https://www.instagram.com/casa_das_lameirinhas_/" target="_blank">
-                    <img class="h-6 w-6 mr-2" src="instagram-brands.svg" alt="Instagram" />
-                </a>
-                <a href="https://www.facebook.com/Casa-das-Lameirinhas-106005135309937" target="_blank">
-                    <img class="h-6 w-6" src="facebook-f-brands.svg" alt="Facebook" />
-                </a>
-            </div>
+      <div class="texto p-8">
+        <div class="flex justify-center mt-2">
+          <a
+            href="https://www.instagram.com/casa_das_lameirinhas_/"
+            target="_blank"
+          >
+            <img
+              class="h-6 w-6 mr-2"
+              src="instagram-brands.svg"
+              alt="Instagram"
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/Casa-das-Lameirinhas-106005135309937"
+            target="_blank"
+          >
+            <img class="h-6 w-6" src="facebook-f-brands.svg" alt="Facebook" />
+          </a>
         </div>
-        <div class="p-2 mb-8 bg-[#a60000]">
-            <a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank">
-                <img src="./LivroReclamacoes.png" width="80" />
-            </a>
-        </div>
+      </div>
+      <div class="p-2 mb-8 bg-[#a60000]">
+        <a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank">
+          <img src="./LivroReclamacoes.png" width="80" />
+        </a>
+      </div>
     </footer>
 
     <script>
-        function initMap() {
-            const location = { lat: 41.08641, lng: -8.07044 };
+      function initMap() {
+        const location = { lat: 41.08641, lng: -8.07044 };
 
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 14,
-                center: location
-            });
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 14,
+          center: location,
+        });
 
-            const marker = new google.maps.Marker({
-                position: location,
-                map: map
-            });
-        }
+        const marker = new google.maps.Marker({
+          position: location,
+          map: map,
+        });
+      }
 
-        window.initMap = initMap;
+      window.initMap = initMap;
     </script>
 
     <script defer id="site" type="text/javascript" src="/site.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</body>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
 </html>
