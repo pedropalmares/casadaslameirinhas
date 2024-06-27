@@ -486,7 +486,7 @@ h2 {
 
 @media (min-width: 1024px) {
   .month-container {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -674,12 +674,16 @@ td {
   margin-right: auto;
 }
 
-.mt-4 {
-  margin-top: 1rem;
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .mr-2 {
@@ -688,10 +692,6 @@ td {
 
 .mb-8 {
   margin-bottom: 2rem;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
 }
 
 .mt-2 {
@@ -787,12 +787,12 @@ td {
        column-gap: 0.75rem;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .border {
@@ -814,14 +814,14 @@ td {
   background-color: rgb(21 128 61 / var(--tw-bg-opacity));
 }
 
-.bg-lightgrey {
-  --tw-bg-opacity: 1;
-  background-color: rgb(212 212 212 / var(--tw-bg-opacity));
-}
-
 .bg-green-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(22 101 52 / var(--tw-bg-opacity));
+}
+
+.bg-lightgrey {
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 212 212 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#a60000\] {
