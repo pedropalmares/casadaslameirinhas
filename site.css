@@ -926,14 +926,6 @@ td {
     margin: 2rem;
   }
 
-  .lg\:block {
-    display: block;
-  }
-
-  .lg\:hidden {
-    display: none;
-  }
-
   .lg\:h-\[600px\] {
     height: 600px;
   }
