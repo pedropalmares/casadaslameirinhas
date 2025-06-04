@@ -631,12 +631,8 @@ td {
      object-position: center;
 }
 
-.text-left {
-  text-align: left;
-}
-
-.text-center {
-  text-align: center;
+.text-justify {
+  text-align: justify;
 }
 
 .text-2xl {
