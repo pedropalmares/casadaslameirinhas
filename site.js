@@ -14,9 +14,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Navbar
 $(".section_button").click(function () {
-  $("section").hide();
-  $("#" + this.id.replace("_button", "")).show();
-  window.scrollTo(0, 0);
+  if (this.id == "english_button") {
+    $("#english").show();
+    $("#portuguese").hide();
+  }
+
+  if (this.id == "portuguese_button") {
+    $("#portuguese").show();
+    $("#english").hide();
+  }
 });
 
 // Open tab when clicking in calendar
